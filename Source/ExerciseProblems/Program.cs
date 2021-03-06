@@ -1,8 +1,12 @@
-﻿using System;
+﻿// <copyright file="Program.cs" company="PKCodes">
+// Copyright (c) PKCodes. All rights reserved.
+// </copyright>
 
 namespace ExerciseProblems
 {
-    class Program
+    using System;
+
+    public static class Program
     {
         static void Main(string[] args)
         {
