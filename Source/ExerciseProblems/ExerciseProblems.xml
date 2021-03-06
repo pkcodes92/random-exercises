@@ -4,5 +4,38 @@
         <name>ExerciseProblems</name>
     </assembly>
     <members>
+        <member name="T:ExerciseProblems.ProblemSolver">
+            <summary>
+            This is the problem solver class.
+            </summary>
+        </member>
+        <member name="M:ExerciseProblems.ProblemSolver.AbsoluteDifference">
+            <summary>
+            This method will calculate the absolute difference.
+            </summary>
+        </member>
+        <member name="T:ExerciseProblems.Program">
+            <summary>
+            This is the main driver class of this application.
+            </summary>
+        </member>
+        <member name="M:ExerciseProblems.Program.Main">
+            <summary>
+            This is the main entry point of execution.
+            </summary>
+        </member>
+        <member name="T:ExerciseProblems.Solver">
+            <summary>
+            This is the class that will do the heavy-lifting of solving all problems.
+            </summary>
+        </member>
+        <member name="M:ExerciseProblems.Solver.FindDifference(System.Int32)">
+            <summary>
+            This method will calculate the absolute difference between the input number, n
+            and 51. If the value of n is greater than 51, return triple the absolute difference.
+            </summary>
+            <param name="n">The input integer, provided from the console.</param>
+            <returns>The absolute difference which is an integer.</returns>
+        </member>
     </members>
 </doc>

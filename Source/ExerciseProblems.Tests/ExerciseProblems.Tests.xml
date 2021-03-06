@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ExerciseProblems.Tests</name>
+    </assembly>
+    <members>
+        <member name="T:ExerciseProblems.Tests.AbsoluteDifferenceTest">
+            <summary>
+            This is the unit test class for the absolute difference problem.
+            </summary>
+        </member>
+        <member name="M:ExerciseProblems.Tests.AbsoluteDifferenceTest.FindAbsDifferenceTest_InputLessThan51">
+            <summary>
+            This method is used to test the normal case.
+            </summary>
+        </member>
+        <member name="M:ExerciseProblems.Tests.AbsoluteDifferenceTest.FindAbsDifferenceTest_InputGreaterThan51">
+            <summary>
+            This method is used to test the case where the input integer is greater than 51.
+            </summary>
+        </member>
+    </members>
+</doc>
