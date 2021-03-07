@@ -26,5 +26,32 @@ namespace ExerciseProblems
 
             return x - n;
         }
+
+        /// <summary>
+        /// This method will return an integer array that is left rotated.
+        /// </summary>
+        /// <param name="input">The array that is blank, and going to be the output of left rotation.</param>
+        /// <param name="a">The array that is coming in as input from the user.</param>
+        /// <param name="k">The number of rotations to be conducted.</param>
+        /// <param name="n">The size of the input array.</param>
+        /// <returns>An integer array that is the result of the left rotations.</returns>
+        public static int[] LeftRotateArray(int[] input, int[] a, int k, int n)
+        {
+            int j, z;
+
+            for (j = 0; j < n; j++)
+            {
+                z = (j - k) % n;
+
+                if (z != 0)
+                {
+                    z = (n + z) % n;
+                }
+
+                input[z] = a[j];
+            }
+
+            return input;
+        }
     }
 }

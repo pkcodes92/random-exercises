@@ -19,5 +19,15 @@
             This method is used to test the case where the input integer is greater than 51.
             </summary>
         </member>
+        <member name="T:ExerciseProblems.Tests.ArrayLeftRotationTest">
+            <summary>
+            This test class is for the array left rotation problem implementation.
+            </summary>
+        </member>
+        <member name="M:ExerciseProblems.Tests.ArrayLeftRotationTest.LeftRotateArrayTest">
+            <summary>
+            This method is to make sure that the left rotation works.
+            </summary>
+        </member>
     </members>
 </doc>
