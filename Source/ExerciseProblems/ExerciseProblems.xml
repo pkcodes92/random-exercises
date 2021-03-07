@@ -14,6 +14,11 @@
             This method will calculate the absolute difference.
             </summary>
         </member>
+        <member name="M:ExerciseProblems.ProblemSolver.ArrayLeftRotation">
+            <summary>
+            This method conducts the array left rotation.
+            </summary>
+        </member>
         <member name="T:ExerciseProblems.Program">
             <summary>
             This is the main driver class of this application.

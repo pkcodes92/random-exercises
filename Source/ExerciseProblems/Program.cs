@@ -24,6 +24,10 @@ namespace ExerciseProblems
             switch (problemChoice)
             {
                 case "AbsoluteDifference":
+                    ProblemSolver.AbsoluteDifference();
+                    break;
+                case "ArrayLeftRotation":
+                    ProblemSolver.ArrayLeftRotation();
                     break;
                 default:
                     Console.WriteLine($"Sorry I don't think I have the logic for {problemChoice}");

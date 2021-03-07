@@ -23,5 +23,13 @@ namespace ExerciseProblems
             int result = Solver.FindDifference(n);
             Console.WriteLine(result);
         }
+
+        /// <summary>
+        /// This method conducts the array left rotation.
+        /// </summary>
+        public static void ArrayLeftRotation()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
