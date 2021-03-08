@@ -73,5 +73,13 @@ namespace ExerciseProblems
                 Console.Write(resultArray[i] + " ");
             }
         }
+
+        /// <summary>
+        /// This method will find the number of even-numbered digits.
+        /// </summary>
+        public static void NumbersWithEvenNumberDigits()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

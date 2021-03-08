@@ -53,5 +53,16 @@ namespace ExerciseProblems
 
             return input;
         }
+
+        /// <summary>
+        /// This method will find the number of elements in the array where the number itself
+        /// has an even number of digits.
+        /// </summary>
+        /// <param name="input">The input array.</param>
+        /// <returns>A total count of even-numbered integers.</returns>
+        public static int FindNumbersWithEvenNumberDigits(int[] input)
+        {
+            return 0;
+        }
     }
 }
