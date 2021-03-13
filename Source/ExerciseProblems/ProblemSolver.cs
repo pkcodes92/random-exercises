@@ -79,7 +79,10 @@ namespace ExerciseProblems
         /// </summary>
         public static void NumbersWithEvenNumberDigits()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Please enter a list of integers separated by a space: ");
+            string[] inputStr = Console.ReadLine().Split(' ');
+            int[] input = Array.ConvertAll(inputStr, int.Parse);
+            Console.WriteLine($"Number of numbers with even-numbered digits: {Solver.FindNumbersWithEvenNumberDigits(input)}");
         }
     }
 }

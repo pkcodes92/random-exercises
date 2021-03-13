@@ -55,6 +55,11 @@
             This method conducts the array left rotation.
             </summary>
         </member>
+        <member name="M:ExerciseProblems.ProblemSolver.NumbersWithEvenNumberDigits">
+            <summary>
+            This method will find the number of even-numbered digits.
+            </summary>
+        </member>
         <member name="T:ExerciseProblems.Program">
             <summary>
             This is the main driver class of this application.
@@ -87,6 +92,14 @@
             <param name="k">The number of rotations to be conducted.</param>
             <param name="n">The size of the input array.</param>
             <returns>An integer array that is the result of the left rotations.</returns>
+        </member>
+        <member name="M:ExerciseProblems.Solver.FindNumbersWithEvenNumberDigits(System.Int32[])">
+            <summary>
+            This method will find the number of elements in the array where the number itself
+            has an even number of digits.
+            </summary>
+            <param name="input">The input array.</param>
+            <returns>A total count of even-numbered integers.</returns>
         </member>
     </members>
 </doc>
