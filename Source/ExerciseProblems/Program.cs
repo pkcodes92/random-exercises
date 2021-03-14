@@ -29,6 +29,9 @@ namespace ExerciseProblems
                 case "ArrayLeftRotation":
                     ProblemSolver.ArrayLeftRotation();
                     break;
+                case "NumbersWithEvenNumberDigits":
+                    ProblemSolver.NumbersWithEvenNumberDigits();
+                    break;
                 default:
                     Console.WriteLine($"Sorry I don't think I have the logic for {problemChoice}");
                     break;

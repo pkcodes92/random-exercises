@@ -29,5 +29,15 @@
             This method is to make sure that the left rotation works.
             </summary>
         </member>
+        <member name="T:ExerciseProblems.Tests.NumbersWithEvenNumberLengthTest">
+            <summary>
+            This class tests the logic for the problem to find the number of integers which are of even-length in an array.
+            </summary>
+        </member>
+        <member name="M:ExerciseProblems.Tests.NumbersWithEvenNumberLengthTest.BaseLineUnitTest">
+            <summary>
+            This method is a baseline unit test to make sure that there is a proper result returning.
+            </summary>
+        </member>
     </members>
 </doc>
