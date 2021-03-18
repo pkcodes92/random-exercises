@@ -74,5 +74,15 @@ namespace ExerciseProblems
 
             return totalCount;
         }
+
+        /// <summary>
+        /// This method be able to take the input string and create an acronym.
+        /// </summary>
+        /// <param name="input">The input string.</param>
+        /// <returns>A compressed version - or the acronym.</returns>
+        public static string MakeAcronym(string input)
+        {
+            return string.Empty;
+        }
     }
 }

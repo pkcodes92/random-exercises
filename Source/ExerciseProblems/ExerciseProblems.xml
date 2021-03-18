@@ -60,6 +60,11 @@
             This method will find the number of even-numbered digits.
             </summary>
         </member>
+        <member name="M:ExerciseProblems.ProblemSolver.CreateAcronym">
+            <summary>
+            This method will be able to solve the problem of creating an acronym.
+            </summary>
+        </member>
         <member name="T:ExerciseProblems.Program">
             <summary>
             This is the main driver class of this application.
@@ -100,6 +105,13 @@
             </summary>
             <param name="input">The input array.</param>
             <returns>A total count of even-numbered integers.</returns>
+        </member>
+        <member name="M:ExerciseProblems.Solver.MakeAcronym(System.String)">
+            <summary>
+            This method be able to take the input string and create an acronym.
+            </summary>
+            <param name="input">The input string.</param>
+            <returns>A compressed version - or the acronym.</returns>
         </member>
     </members>
 </doc>
