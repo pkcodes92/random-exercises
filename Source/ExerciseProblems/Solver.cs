@@ -4,6 +4,8 @@
 
 namespace ExerciseProblems
 {
+    using System;
+
     /// <summary>
     /// This is the class that will do the heavy-lifting of solving all problems.
     /// </summary>
@@ -73,6 +75,32 @@ namespace ExerciseProblems
             }
 
             return totalCount;
+        }
+
+        /// <summary>
+        /// This method be able to take the input string and create an acronym.
+        /// </summary>
+        /// <param name="input">The input string.</param>
+        /// <returns>A compressed version - or the acronym.</returns>
+        public static string MakeAcronym(string input)
+        {
+            if (input is null)
+            {
+                throw new ArgumentNullException(nameof(input));
+            }
+
+            var parts = input.Split(new char[] { ' ', '-', '_' });
+
+            string res = string.Empty;
+            foreach (var p in parts)
+            {
+                if (p.Length > 0)
+                {
+                    res += p.ToUpper()[0];
+                }
+            }
+
+            return res;
         }
     }
 }

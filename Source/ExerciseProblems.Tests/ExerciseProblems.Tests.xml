@@ -19,6 +19,21 @@
             This method is used to test the case where the input integer is greater than 51.
             </summary>
         </member>
+        <member name="T:ExerciseProblems.Tests.AcronymMakerTest">
+            <summary>
+            This is the unit test for the acronym maker.
+            </summary>
+        </member>
+        <member name="M:ExerciseProblems.Tests.AcronymMakerTest.CreateBasicAcronymNonNullTest">
+            <summary>
+            This method will look at the nominal non-null input string.
+            </summary>
+        </member>
+        <member name="M:ExerciseProblems.Tests.AcronymMakerTest.CreateAcronymExceptionTest">
+            <summary>
+            This method is used to make sure that the ArgumentNullException is thrown.
+            </summary>
+        </member>
         <member name="T:ExerciseProblems.Tests.ArrayLeftRotationTest">
             <summary>
             This test class is for the array left rotation problem implementation.

@@ -84,5 +84,15 @@ namespace ExerciseProblems
             int[] input = Array.ConvertAll(inputStr, int.Parse);
             Console.WriteLine($"Number of numbers with even-numbered digits: {Solver.FindNumbersWithEvenNumberDigits(input)}");
         }
+
+        /// <summary>
+        /// This method will be able to solve the problem of creating an acronym.
+        /// </summary>
+        public static void CreateAcronym()
+        {
+            Console.WriteLine("Enter a text from which to create an acronym: ");
+            var stringToMakeAnAcronym = Console.ReadLine();
+            Console.WriteLine($"Your acronym: {Solver.MakeAcronym(stringToMakeAnAcronym)}");
+        }
     }
 }

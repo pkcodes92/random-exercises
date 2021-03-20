@@ -29,6 +29,9 @@ namespace ExerciseProblems
                 case "ArrayLeftRotation":
                     ProblemSolver.ArrayLeftRotation();
                     break;
+                case "AcronymMaker":
+                    ProblemSolver.CreateAcronym();
+                    break;
                 case "NumbersWithEvenNumberDigits":
                     ProblemSolver.NumbersWithEvenNumberDigits();
                     break;
