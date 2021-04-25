@@ -4,6 +4,7 @@
 
 namespace ExerciseProblems
 {
+    using ExerciseProblems.Exceptions;
     using System;
 
     /// <summary>
@@ -101,6 +102,36 @@ namespace ExerciseProblems
             }
 
             return res;
+        }
+
+        /// <summary>
+        /// This method will allow for finding the alternating sums.
+        /// </summary>
+        /// <param name="input">The array of integers coming in from the command line.</param>
+        /// <returns>An array of integers of alternating sums.</returns>
+        public static int[] FindAlternatingSums(int[] input)
+        {
+            if (input.Length % 2 != 0)
+            {
+                throw new ArrayInputSizeException($"The input is currently: {input.Length}");
+            }
+
+            int[] weights = new int[2];
+
+            for (int i = 0; i < input.Length; i++)
+            {
+                if (i % 2 == 0)
+                {
+                    weights[0] += input[i];
+                }
+
+                if (i % 2 == 1)
+                {
+                    weights[1] += input[i];
+                }
+            }
+
+            return weights;
         }
     }
 }

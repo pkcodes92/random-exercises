@@ -35,6 +35,9 @@ namespace ExerciseProblems
                 case "NumbersWithEvenNumberDigits":
                     ProblemSolver.NumbersWithEvenNumberDigits();
                     break;
+                case "AlternatingSums":
+                    ProblemSolver.AlternatingSums();
+                    break;
                 default:
                     Console.WriteLine($"Sorry I don't think I have the logic for {problemChoice}");
                     break;
