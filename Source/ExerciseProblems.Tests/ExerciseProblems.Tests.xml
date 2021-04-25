@@ -34,6 +34,22 @@
             This method is used to make sure that the ArgumentNullException is thrown.
             </summary>
         </member>
+        <member name="T:ExerciseProblems.Tests.AlternatingSumsTest">
+            <summary>
+            This is the test class for the alternating sums problem.
+            </summary>
+        </member>
+        <member name="M:ExerciseProblems.Tests.AlternatingSumsTest.ProperArrayLengthTest">
+            <summary>
+            This test method will make sure that the output array is correct.
+            </summary>
+        </member>
+        <member name="M:ExerciseProblems.Tests.AlternatingSumsTest.ImproperArrayLengthTest">
+            <summary>
+            This test method will see if there is an exception thrown because
+            of the input array length not being divisible by 2.
+            </summary>
+        </member>
         <member name="T:ExerciseProblems.Tests.ArrayLeftRotationTest">
             <summary>
             This test class is for the array left rotation problem implementation.

@@ -94,5 +94,16 @@ namespace ExerciseProblems
             var stringToMakeAnAcronym = Console.ReadLine();
             Console.WriteLine($"Your acronym: {Solver.MakeAcronym(stringToMakeAnAcronym)}");
         }
+
+        /// <summary>
+        /// This method will be solving the problem of finding alternating sums.
+        /// </summary>
+        public static void AlternatingSums()
+        {
+            Console.WriteLine("Enter an array of integers (space-separated) to find the alternating sums: ");
+            string[] inputStr = Console.ReadLine().Split(' ');
+            int[] input = Array.ConvertAll(inputStr, int.Parse);
+            Console.WriteLine($"The resulting alternating sums are: {Solver.FindAlternatingSums(input)}");
+        }
     }
 }

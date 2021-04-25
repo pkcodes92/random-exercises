@@ -65,6 +65,11 @@
             This method will be able to solve the problem of creating an acronym.
             </summary>
         </member>
+        <member name="M:ExerciseProblems.ProblemSolver.AlternatingSums">
+            <summary>
+            This method will be solving the problem of finding alternating sums.
+            </summary>
+        </member>
         <member name="T:ExerciseProblems.Program">
             <summary>
             This is the main driver class of this application.
@@ -112,6 +117,13 @@
             </summary>
             <param name="input">The input string.</param>
             <returns>A compressed version - or the acronym.</returns>
+        </member>
+        <member name="M:ExerciseProblems.Solver.FindAlternatingSums(System.Int32[])">
+            <summary>
+            This method will allow for finding the alternating sums.
+            </summary>
+            <param name="input">The array of integers coming in from the command line.</param>
+            <returns>An array of integers of alternating sums.</returns>
         </member>
     </members>
 </doc>
