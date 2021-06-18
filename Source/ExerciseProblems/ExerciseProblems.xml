@@ -70,6 +70,11 @@
             This method will be solving the problem of finding alternating sums.
             </summary>
         </member>
+        <member name="M:ExerciseProblems.ProblemSolver.ArrayElementsMultiplication">
+            <summary>
+            This method will take two arrays and multiply the elements that are in both arrays.
+            </summary>
+        </member>
         <member name="T:ExerciseProblems.Program">
             <summary>
             This is the main driver class of this application.
@@ -124,6 +129,15 @@
             </summary>
             <param name="input">The array of integers coming in from the command line.</param>
             <returns>An array of integers of alternating sums.</returns>
+        </member>
+        <member name="M:ExerciseProblems.Solver.MultiplyArrayElements(System.Int32[],System.Int32[],System.Int32)">
+            <summary>
+            This method will make sure to calculate the product of the elements in both arrays.
+            </summary>
+            <param name="first">The first array.</param>
+            <param name="second">The second array.</param>
+            <param name="arrayLength">The length of the array.</param>
+            <returns>An integer array that represents the necessary result.</returns>
         </member>
     </members>
 </doc>

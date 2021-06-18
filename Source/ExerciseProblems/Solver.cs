@@ -4,8 +4,8 @@
 
 namespace ExerciseProblems
 {
-    using ExerciseProblems.Exceptions;
     using System;
+    using ExerciseProblems.Exceptions;
 
     /// <summary>
     /// This is the class that will do the heavy-lifting of solving all problems.
@@ -132,6 +132,18 @@ namespace ExerciseProblems
             }
 
             return weights;
+        }
+
+        /// <summary>
+        /// This method will make sure to calculate the product of the elements in both arrays.
+        /// </summary>
+        /// <param name="first">The first array.</param>
+        /// <param name="second">The second array.</param>
+        /// <param name="arrayLength">The length of the array.</param>
+        /// <returns>An integer array that represents the necessary result.</returns>
+        public static int[] MultiplyArrayElements(int[] first, int[] second, int arrayLength)
+        {
+            return null;
         }
     }
 }
