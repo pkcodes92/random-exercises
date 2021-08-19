@@ -4,8 +4,9 @@
 
 namespace ExerciseProblems
 {
-    using ExerciseProblems.Exceptions;
     using System;
+    using System.Collections.Generic;
+    using ExerciseProblems.Exceptions;
 
     /// <summary>
     /// This is the class that will do the heavy-lifting of solving all problems.
@@ -132,6 +133,49 @@ namespace ExerciseProblems
             }
 
             return weights;
+        }
+
+        /// <summary>
+        /// This method will make sure to calculate the product of the elements in both arrays.
+        /// </summary>
+        /// <param name="first">The first array.</param>
+        /// <param name="second">The second array.</param>
+        /// <param name="arrayLength">The length of the array.</param>
+        /// <returns>An integer array that represents the necessary result.</returns>
+        public static int[] MultiplyArrayElements(int[] first, int[] second, int arrayLength)
+        {
+            Console.WriteLine("Array1: [{0}]", string.Join(",", first));
+            Console.WriteLine("Array2: [{0}]", string.Join(",", second));
+
+            if (first is null)
+            {
+                throw new ArgumentNullException(nameof(first));
+            }
+
+            if (second is null)
+            {
+                throw new ArgumentNullException(nameof(second));
+            }
+
+            if (first.Length == 0 || second.Length == 0)
+            {
+                throw new MatrixMultiplicationException("The array inputs need to be greater than 0 elements!");
+            }
+
+            if (arrayLength == 0)
+            {
+                throw new MatrixMultiplicationException("The array length needs to Non-Zero!", arrayLength);
+            }
+
+            List<int> result = new List<int>();
+
+            for (int i = 0; i < arrayLength; i++)
+            {
+                result.Add(first[i] * second[i]);
+            }
+
+            var resultArray = result.ToArray();
+            return resultArray;
         }
     }
 }

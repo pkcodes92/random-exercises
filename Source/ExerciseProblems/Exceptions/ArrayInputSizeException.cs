@@ -27,7 +27,9 @@ namespace ExerciseProblems.Exceptions
         /// </summary>
         /// <param name="serializationInfo">The serialization info.</param>
         /// <param name="streamingContext">The current streaming context.</param>
-        protected ArrayInputSizeException(SerializationInfo serializationInfo, StreamingContext streamingContext)
+        protected ArrayInputSizeException(
+            SerializationInfo serializationInfo,
+            StreamingContext streamingContext)
         {
         }
     }

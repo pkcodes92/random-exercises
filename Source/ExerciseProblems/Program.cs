@@ -38,6 +38,9 @@ namespace ExerciseProblems
                 case "AlternatingSums":
                     ProblemSolver.AlternatingSums();
                     break;
+                case "ArrayElementsMultiplication":
+                    ProblemSolver.ArrayElementsMultiplication();
+                    break;
                 default:
                     Console.WriteLine($"Sorry I don't think I have the logic for {problemChoice}");
                     break;

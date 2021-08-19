@@ -40,6 +40,31 @@
             <param name="serializationInfo">The serialization information.</param>
             <param name="streamingContext">The current streaming context.</param>
         </member>
+        <member name="T:ExerciseProblems.Exceptions.MatrixMultiplicationException">
+            <summary>
+            This exception class will be able to throw the right exceptions in the matrix multiplications.
+            </summary>
+        </member>
+        <member name="M:ExerciseProblems.Exceptions.MatrixMultiplicationException.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ExerciseProblems.Exceptions.MatrixMultiplicationException"/> class.
+            </summary>
+            <param name="message">The message to render on the screen.</param>
+        </member>
+        <member name="M:ExerciseProblems.Exceptions.MatrixMultiplicationException.#ctor(System.String,System.Object)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ExerciseProblems.Exceptions.MatrixMultiplicationException"/> class.
+            </summary>
+            <param name="message">The message to render on the screen.</param>
+            <param name="variableMissing">The parameter that is missing.</param>
+        </member>
+        <member name="M:ExerciseProblems.Exceptions.MatrixMultiplicationException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ExerciseProblems.Exceptions.MatrixMultiplicationException"/> class.
+            </summary>
+            <param name="serializationInfo">The serialization info.</param>
+            <param name="streamingContext">The current streaming context.</param>
+        </member>
         <member name="T:ExerciseProblems.ProblemSolver">
             <summary>
             This is the problem solver class.
@@ -68,6 +93,11 @@
         <member name="M:ExerciseProblems.ProblemSolver.AlternatingSums">
             <summary>
             This method will be solving the problem of finding alternating sums.
+            </summary>
+        </member>
+        <member name="M:ExerciseProblems.ProblemSolver.ArrayElementsMultiplication">
+            <summary>
+            This method will take two arrays and multiply the elements that are in both arrays.
             </summary>
         </member>
         <member name="T:ExerciseProblems.Program">
@@ -124,6 +154,15 @@
             </summary>
             <param name="input">The array of integers coming in from the command line.</param>
             <returns>An array of integers of alternating sums.</returns>
+        </member>
+        <member name="M:ExerciseProblems.Solver.MultiplyArrayElements(System.Int32[],System.Int32[],System.Int32)">
+            <summary>
+            This method will make sure to calculate the product of the elements in both arrays.
+            </summary>
+            <param name="first">The first array.</param>
+            <param name="second">The second array.</param>
+            <param name="arrayLength">The length of the array.</param>
+            <returns>An integer array that represents the necessary result.</returns>
         </member>
     </members>
 </doc>

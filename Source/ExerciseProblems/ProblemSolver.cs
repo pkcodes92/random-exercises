@@ -105,5 +105,20 @@ namespace ExerciseProblems
             int[] input = Array.ConvertAll(inputStr, int.Parse);
             Console.WriteLine($"The resulting alternating sums are: {Solver.FindAlternatingSums(input)}");
         }
+
+        /// <summary>
+        /// This method will take two arrays and multiply the elements that are in both arrays.
+        /// </summary>
+        public static void ArrayElementsMultiplication()
+        {
+            int[] firstArray = { 1, 3, 4, -5, 4 };
+            int[] secondArray = { 2, 4, 3, -5, 22 };
+
+            Console.WriteLine("\nArray1: [{0}]", string.Join(", ", firstArray));
+            Console.WriteLine("Array2: [{0}]", string.Join(", ", secondArray));
+            Console.WriteLine(
+                "Multiplying the corresponding elements of both arrays: [{0}]",
+                string.Join(", ", Solver.MultiplyArrayElements(firstArray, secondArray, firstArray.Length)));
+        }
     }
 }
