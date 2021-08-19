@@ -5,6 +5,7 @@
 namespace ExerciseProblems
 {
     using System;
+    using System.Collections.Generic;
     using ExerciseProblems.Exceptions;
 
     /// <summary>
@@ -143,7 +144,18 @@ namespace ExerciseProblems
         /// <returns>An integer array that represents the necessary result.</returns>
         public static int[] MultiplyArrayElements(int[] first, int[] second, int arrayLength)
         {
-            return null;
+            Console.WriteLine("Array1: [{0}]", string.Join(",", first));
+            Console.WriteLine("Array2: [{0}]", string.Join(",", second));
+
+            List<int> result = new List<int>();
+
+            for (int i = 0; i < arrayLength; i++)
+            {
+                result.Add(first[i] * second[i]);
+            }
+
+            var resultArray = result.ToArray();
+            return resultArray;
         }
     }
 }
