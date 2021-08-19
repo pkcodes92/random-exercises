@@ -147,6 +147,21 @@ namespace ExerciseProblems
             Console.WriteLine("Array1: [{0}]", string.Join(",", first));
             Console.WriteLine("Array2: [{0}]", string.Join(",", second));
 
+            if (first is null)
+            {
+                throw new ArgumentNullException(nameof(first));
+            }
+
+            if (second is null)
+            {
+                throw new ArgumentNullException(nameof(second));
+            }
+
+            if (first.Length == 0 || second.Length == 0)
+            {
+                throw new MatrixMultiplicationException("The array inputs need to be greater than 0 elements!");
+            }
+
             List<int> result = new List<int>();
 
             for (int i = 0; i < arrayLength; i++)

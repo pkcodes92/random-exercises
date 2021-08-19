@@ -40,6 +40,24 @@
             <param name="serializationInfo">The serialization information.</param>
             <param name="streamingContext">The current streaming context.</param>
         </member>
+        <member name="T:ExerciseProblems.Exceptions.MatrixMultiplicationException">
+            <summary>
+            This exception class will be able to throw the right exceptions in the matrix multiplications.
+            </summary>
+        </member>
+        <member name="M:ExerciseProblems.Exceptions.MatrixMultiplicationException.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ExerciseProblems.Exceptions.MatrixMultiplicationException"/> class.
+            </summary>
+            <param name="message">The message to render on the screen.</param>
+        </member>
+        <member name="M:ExerciseProblems.Exceptions.MatrixMultiplicationException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ExerciseProblems.Exceptions.MatrixMultiplicationException"/> class.
+            </summary>
+            <param name="serializationInfo">The serialization info.</param>
+            <param name="streamingContext">The current streaming context.</param>
+        </member>
         <member name="T:ExerciseProblems.ProblemSolver">
             <summary>
             This is the problem solver class.
