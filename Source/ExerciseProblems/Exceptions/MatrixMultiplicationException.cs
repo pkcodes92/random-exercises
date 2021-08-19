@@ -24,6 +24,15 @@ namespace ExerciseProblems.Exceptions
         /// <summary>
         /// Initializes a new instance of the <see cref="MatrixMultiplicationException"/> class.
         /// </summary>
+        /// <param name="message">The message to render on the screen.</param>
+        /// <param name="variableMissing">The parameter that is missing.</param>
+        public MatrixMultiplicationException(string message, object variableMissing)
+        {
+        }
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="MatrixMultiplicationException"/> class.
+        /// </summary>
         /// <param name="serializationInfo">The serialization info.</param>
         /// <param name="streamingContext">The current streaming context.</param>
         protected MatrixMultiplicationException(

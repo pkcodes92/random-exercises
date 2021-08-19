@@ -51,6 +51,13 @@
             </summary>
             <param name="message">The message to render on the screen.</param>
         </member>
+        <member name="M:ExerciseProblems.Exceptions.MatrixMultiplicationException.#ctor(System.String,System.Object)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ExerciseProblems.Exceptions.MatrixMultiplicationException"/> class.
+            </summary>
+            <param name="message">The message to render on the screen.</param>
+            <param name="variableMissing">The parameter that is missing.</param>
+        </member>
         <member name="M:ExerciseProblems.Exceptions.MatrixMultiplicationException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
             <summary>
             Initializes a new instance of the <see cref="T:ExerciseProblems.Exceptions.MatrixMultiplicationException"/> class.

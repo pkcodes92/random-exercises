@@ -162,6 +162,11 @@ namespace ExerciseProblems
                 throw new MatrixMultiplicationException("The array inputs need to be greater than 0 elements!");
             }
 
+            if (arrayLength == 0)
+            {
+                throw new MatrixMultiplicationException("The array length needs to Non-Zero!", arrayLength);
+            }
+
             List<int> result = new List<int>();
 
             for (int i = 0; i < arrayLength; i++)
