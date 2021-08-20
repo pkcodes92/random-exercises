@@ -41,6 +41,9 @@ namespace ExerciseProblems
                 case "ArrayElementsMultiplication":
                     ProblemSolver.ArrayElementsMultiplication();
                     break;
+                case "AvoidObstacles":
+                    ProblemSolver.AvoidObstacles();
+                    break;
                 default:
                     Console.WriteLine($"Sorry I don't think I have the logic for {problemChoice}");
                     break;

@@ -120,5 +120,13 @@ namespace ExerciseProblems
                 "Multiplying the corresponding elements of both arrays: [{0}]",
                 string.Join(", ", Solver.MultiplyArrayElements(firstArray, secondArray, firstArray.Length)));
         }
+
+        /// <summary>
+        /// This method will solve the avoid obstacles problem.
+        /// </summary>
+        public static void AvoidObstacles()
+        {
+            Console.WriteLine("This is to be implemented shortly!");
+        }
     }
 }
