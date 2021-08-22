@@ -65,6 +65,11 @@
             This class will be used for testing various scenarios on the matrix multiplication.
             </summary>
         </member>
+        <member name="M:ExerciseProblems.Tests.MatrixMultiplicationTest.MatrixMultiplication_Baseline_Test">
+            <summary>
+            This method is the standard baseline test method.
+            </summary>
+        </member>
         <member name="T:ExerciseProblems.Tests.NumbersWithEvenNumberLengthTest">
             <summary>
             This class tests the logic for the problem to find the number of integers which are of even-length in an array.
