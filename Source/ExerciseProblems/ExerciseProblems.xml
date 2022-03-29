@@ -105,6 +105,11 @@
             This method will solve the avoid obstacles problem.
             </summary>
         </member>
+        <member name="M:ExerciseProblems.ProblemSolver.KnapsackLight">
+            <summary>
+            This method will address the solution to the knapsack ligt problem.
+            </summary>
+        </member>
         <member name="T:ExerciseProblems.Program">
             <summary>
             This is the main driver class of this application.

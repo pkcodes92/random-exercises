@@ -130,5 +130,13 @@ namespace ExerciseProblems
             var solution = Solver.AvoidObstacles(inputArray);
             Console.WriteLine($"For Avoid Obstacles the solution is: {solution}");
         }
+
+        /// <summary>
+        /// This method will address the solution to the knapsack ligt problem.
+        /// </summary>
+        public static void KnapsackLight()
+        {
+            Console.WriteLine("Problem is not implemented yet!");
+        }
     }
 }

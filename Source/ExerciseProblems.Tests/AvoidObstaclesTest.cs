@@ -2,7 +2,6 @@
 // Copyright (c) PKCodes. All rights reserved.
 // </copyright>
 
-
 namespace ExerciseProblems.Tests
 {
     using System;
