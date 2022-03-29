@@ -1,11 +1,11 @@
 ﻿// <copyright file="Solver.cs" company="PKCodes">
 // Copyright (c) PKCodes. All rights reserved.
 // </copyright>
-
 namespace ExerciseProblems
 {
     using System;
     using System.Collections.Generic;
+    using System.Linq;
     using ExerciseProblems.Exceptions;
 
     /// <summary>
@@ -176,6 +176,31 @@ namespace ExerciseProblems
 
             var resultArray = result.ToArray();
             return resultArray;
+        }
+
+        /// <summary>
+        /// This method will be calculating the obstacles to avoid.
+        /// </summary>
+        /// <param name="inputArray">The input array, consisting of the obstacles.</param>
+        /// <returns>The minimum length of the jump in order to avoid all obstacles.</returns>
+        public static int AvoidObstacles(int[] inputArray)
+        {
+            if (inputArray is null)
+            {
+                throw new ArgumentNullException(nameof(inputArray));
+            }
+
+            var list = inputArray.ToList();
+
+            for (int i = 1; i < list.Max() + 1; i++)
+            {
+                if (list.All(n => n % i != 0))
+                {
+                    return i;
+                }
+            }
+
+            return list.Max() + 1;
         }
     }
 }

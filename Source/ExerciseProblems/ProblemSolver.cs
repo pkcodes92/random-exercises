@@ -126,7 +126,9 @@ namespace ExerciseProblems
         /// </summary>
         public static void AvoidObstacles()
         {
-            Console.WriteLine("This is to be implemented shortly!");
+            int[] inputArray = { 3, 4, 6, 7, 8, 9 };
+            var solution = Solver.AvoidObstacles(inputArray);
+            Console.WriteLine($"For Avoid Obstacles the solution is: {solution}");
         }
     }
 }

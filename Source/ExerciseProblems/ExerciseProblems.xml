@@ -169,5 +169,12 @@
             <param name="arrayLength">The length of the array.</param>
             <returns>An integer array that represents the necessary result.</returns>
         </member>
+        <member name="M:ExerciseProblems.Solver.AvoidObstacles(System.Int32[])">
+            <summary>
+            This method will be calculating the obstacles to avoid.
+            </summary>
+            <param name="inputArray">The input array, consisting of the obstacles.</param>
+            <returns>The minimum length of the jump in order to avoid all obstacles.</returns>
+        </member>
     </members>
 </doc>
