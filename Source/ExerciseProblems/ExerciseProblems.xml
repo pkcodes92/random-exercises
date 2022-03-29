@@ -181,5 +181,25 @@
             <param name="inputArray">The input array, consisting of the obstacles.</param>
             <returns>The minimum length of the jump in order to avoid all obstacles.</returns>
         </member>
+        <member name="M:ExerciseProblems.Solver.KnapsackLight(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            This method will solve the knapsack light problem.
+            </summary>
+            <param name="value1">The first value.</param>
+            <param name="weight1">The first weight.</param>
+            <param name="value2">The second value.</param>
+            <param name="weight2">The second weight.</param>
+            <param name="maxWeight">The maximum weight of the knapsack.</param>
+            <returns>An integer of the knapsack weight that is to be carried.</returns>
+        </member>
+        <member name="M:ExerciseProblems.Solver.ExtraNumber(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            This method will select the extra number.
+            </summary>
+            <param name="a">The first of three integers.</param>
+            <param name="b">The second of three integers.</param>
+            <param name="c">The third of three integers.</param>
+            <returns>The extra number that has been selected.</returns>
+        </member>
     </members>
 </doc>

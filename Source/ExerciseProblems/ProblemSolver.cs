@@ -136,7 +136,13 @@ namespace ExerciseProblems
         /// </summary>
         public static void KnapsackLight()
         {
-            Console.WriteLine("Problem is not implemented yet!");
+            int val1 = 10;
+            int weight1 = 5;
+            int val2 = 6;
+            int weight2 = 4;
+            int maxW = 8;
+            int solution = Solver.KnapsackLight(val1, weight1, val2, weight2, maxW);
+            Console.WriteLine($"For the Knapsack Light problem, solution = {solution}");
         }
     }
 }

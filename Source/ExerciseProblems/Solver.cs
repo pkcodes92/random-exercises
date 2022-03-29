@@ -202,5 +202,87 @@ namespace ExerciseProblems
 
             return list.Max() + 1;
         }
+
+        /// <summary>
+        /// This method will solve the knapsack light problem.
+        /// </summary>
+        /// <param name="value1">The first value.</param>
+        /// <param name="weight1">The first weight.</param>
+        /// <param name="value2">The second value.</param>
+        /// <param name="weight2">The second weight.</param>
+        /// <param name="maxWeight">The maximum weight of the knapsack.</param>
+        /// <returns>An integer of the knapsack weight that is to be carried.</returns>
+        public static int KnapsackLight(int value1, int weight1, int value2, int weight2, int maxWeight)
+        {
+            if (value1 == 0)
+            {
+                throw new ArgumentNullException(nameof(value1));
+            }
+
+            if (weight1 == 0)
+            {
+                throw new ArgumentNullException(nameof(weight1));
+            }
+
+            if (value2 == 0)
+            {
+                throw new ArgumentNullException(nameof(value2));
+            }
+
+            if (weight2 == 0)
+            {
+                throw new ArgumentNullException(nameof(weight2));
+            }
+
+            int numericalSol;
+            if (weight1 + weight2 <= maxWeight)
+            {
+                numericalSol = value1 + value2;
+            }
+            else if (weight1 <= maxWeight && weight2 <= maxWeight)
+            {
+                numericalSol = Math.Max(value1, value2);
+            }
+            else if (weight1 <= maxWeight)
+            {
+                numericalSol = value1;
+            }
+            else if (weight2 <= maxWeight)
+            {
+                numericalSol = value2;
+            }
+            else
+            {
+                numericalSol = 0;
+            }
+
+            return numericalSol;
+        }
+
+        /// <summary>
+        /// This method will select the extra number.
+        /// </summary>
+        /// <param name="a">The first of three integers.</param>
+        /// <param name="b">The second of three integers.</param>
+        /// <param name="c">The third of three integers.</param>
+        /// <returns>The extra number that has been selected.</returns>
+        public static int ExtraNumber(int a, int b, int c)
+        {
+            int numericalSolution = 0;
+            if (a == b)
+            {
+                numericalSolution = c;
+            }
+            else if (b == c)
+            {
+                numericalSolution = a;
+            }
+            else if (a == c)
+            {
+                numericalSolution = b;
+            }
+
+            return numericalSolution;
+        }
     }
 }
