@@ -60,6 +60,16 @@
             This method is to make sure that the left rotation works.
             </summary>
         </member>
+        <member name="T:ExerciseProblems.Tests.AvoidObstaclesTest">
+            <summary>
+            This class will test the functionality of the solution to the avoidObstacles problem.
+            </summary>
+        </member>
+        <member name="M:ExerciseProblems.Tests.AvoidObstaclesTest.AvoidObstacles_BasicTest">
+            <summary>
+            This method will test the functionality of <see cref="M:ExerciseProblems.Solver.AvoidObstacles(System.Int32[])"/>.
+            </summary>
+        </member>
         <member name="T:ExerciseProblems.Tests.MatrixMultiplicationTest">
             <summary>
             This class will be used for testing various scenarios on the matrix multiplication.
