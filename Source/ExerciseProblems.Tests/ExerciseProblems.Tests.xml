@@ -70,6 +70,11 @@
             This method is the standard baseline test method.
             </summary>
         </member>
+        <member name="M:ExerciseProblems.Tests.MatrixMultiplicationTest.MatrixMultiplication_Exception_Test">
+            <summary>
+            This test method will ensure that there is an exception thrown.
+            </summary>
+        </member>
         <member name="T:ExerciseProblems.Tests.NumbersWithEvenNumberLengthTest">
             <summary>
             This class tests the logic for the problem to find the number of integers which are of even-length in an array.
