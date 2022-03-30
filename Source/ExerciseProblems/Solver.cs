@@ -6,6 +6,7 @@ namespace ExerciseProblems
     using System;
     using System.Collections.Generic;
     using System.Linq;
+    using System.Threading;
     using ExerciseProblems.Exceptions;
 
     /// <summary>
@@ -356,6 +357,85 @@ namespace ExerciseProblems
         /// <param name="delay">The time delay between each output to the console.</param>
         public static void BogoSort(List<int> inputList, bool announce, int delay)
         {
+            if (inputList is null)
+            {
+                throw new ArgumentNullException(nameof(inputList));
+            }
+
+            if (delay == 0)
+            {
+                throw new ArgumentZeroException(nameof(delay));
+            }
+
+            int iteration = 0;
+            while(!IsSorted(inputList))
+            {
+                if (announce)
+                {
+                    PrintIteration(inputList, iteration);
+                }
+
+                if (delay != 0)
+                {
+                    Thread.Sleep(Math.Abs(delay));
+                }
+
+                inputList = Remap(inputList);
+                iteration++;
+            }
+
+            PrintIteration(inputList, iteration);
+            Console.WriteLine();
+            Console.WriteLine($"Bogo Sort completed after {iteration} iterations");
+        }
+
+        private static void PrintIteration(List<int> list, int iteration)
+        {
+            Console.Write("Bogo Sort iteration {0}: ", iteration);
+            for (int i = 0; i < list.Count; i++) 
+            {
+                Console.Write(list[i]);
+                if (i < list.Count)
+                {
+                    Console.Write(" ");
+                }
+            }
+
+            Console.WriteLine();
+        }
+
+        private static bool IsSorted(List<int> list)
+        {
+            for (int i = 0; i < list.Count - 1; i++)
+            {
+                if (list[i] > list[i + 1])
+                {
+                    return false;
+                }
+            }
+
+            return true;
+        }
+
+        private static List<int> Remap(List<int> list)
+        {
+            if (list is null)
+            {
+                throw new ArgumentNullException(nameof(list));
+            }
+
+            int temp;
+            List<int> newList = new List<int>();
+            Random r = new Random();
+
+            while (list.Count > 0)
+            {
+                temp = (int)r.Next(list.Count);
+                newList.Add(list[temp]);
+                list.RemoveAt(temp);
+            }
+
+            return newList;
         }
     }
 }
