@@ -216,22 +216,22 @@ namespace ExerciseProblems
         {
             if (value1 == 0)
             {
-                throw new ArgumentNullException(nameof(value1));
+                throw new ArgumentZeroException(nameof(value1));
             }
 
             if (weight1 == 0)
             {
-                throw new ArgumentNullException(nameof(weight1));
+                throw new ArgumentZeroException(nameof(weight1));
             }
 
             if (value2 == 0)
             {
-                throw new ArgumentNullException(nameof(value2));
+                throw new ArgumentZeroException(nameof(value2));
             }
 
             if (weight2 == 0)
             {
-                throw new ArgumentNullException(nameof(weight2));
+                throw new ArgumentZeroException(nameof(weight2));
             }
 
             int numericalSol;
