@@ -5,6 +5,7 @@
 namespace ExerciseProblems
 {
     using System;
+    using System.Collections.Generic;
     using System.Globalization;
     using ExerciseProblems.Exceptions;
 
@@ -178,6 +179,15 @@ namespace ExerciseProblems
             int b = 3;
             bool result = Solver.IsInfiniteProcess(a, b);
             Console.WriteLine($"Is Infinite Process? {result}");
+        }
+
+        /// <summary>
+        /// This will execute the various things with regards to the Bogo Sort.
+        /// </summary>
+        public static void BogoSort()
+        {
+            List<int> inputList = new List<int>() { 2, 1, 3, 0, 5 };
+            Solver.BogoSort(inputList, true, 5);
         }
     }
 }

@@ -143,6 +143,11 @@
             This method solves the problem is infinite process.
             </summary>
         </member>
+        <member name="M:ExerciseProblems.ProblemSolver.BogoSort">
+            <summary>
+            This will execute the various things with regards to the Bogo Sort.
+            </summary>
+        </member>
         <member name="T:ExerciseProblems.Program">
             <summary>
             This is the main driver class of this application.
@@ -250,6 +255,14 @@
             <param name="a">The integer value of a.</param>
             <param name="b">The integer value of b.</param>
             <returns>A boolean result to see if the two numbers result in an infinite process.</returns>
+        </member>
+        <member name="M:ExerciseProblems.Solver.BogoSort(System.Collections.Generic.List{System.Int32},System.Boolean,System.Int32)">
+            <summary>
+            This method will show the implentation of the Bogo Sort.
+            </summary>
+            <param name="inputList">The input list of integers.</param>
+            <param name="announce">A boolean value determining whether or not to display output in the console.</param>
+            <param name="delay">The time delay between each output to the console.</param>
         </member>
     </members>
 </doc>

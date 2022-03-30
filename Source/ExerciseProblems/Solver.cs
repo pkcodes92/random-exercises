@@ -347,5 +347,15 @@ namespace ExerciseProblems
 
             return a > b || (b - a) % 2 != 0;
         }
+
+        /// <summary>
+        /// This method will show the implentation of the Bogo Sort.
+        /// </summary>
+        /// <param name="inputList">The input list of integers.</param>
+        /// <param name="announce">A boolean value determining whether or not to display output in the console.</param>
+        /// <param name="delay">The time delay between each output to the console.</param>
+        public static void BogoSort(List<int> inputList, bool announce, int delay)
+        {
+        }
     }
 }
