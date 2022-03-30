@@ -168,5 +168,16 @@ namespace ExerciseProblems
             bool solution = Solver.ReachNextLevel(experience, threshold, reward);
             Console.WriteLine($"Can Reach Next Level = {solution}");
         }
+
+        /// <summary>
+        /// This method solves the problem is infinite process.
+        /// </summary>
+        public static void IsInfiniteProcess()
+        {
+            int a = 2;
+            int b = 3;
+            bool result = Solver.IsInfiniteProcess(a, b);
+            Console.WriteLine($"Is Infinite Process? {result}");
+        }
     }
 }

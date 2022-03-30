@@ -268,6 +268,21 @@ namespace ExerciseProblems
         /// <returns>The extra number that has been selected.</returns>
         public static int ExtraNumber(int a, int b, int c)
         {
+            if (a == 0)
+            {
+                throw new ArgumentZeroException(nameof(a));
+            }
+
+            if (b == 0)
+            {
+                throw new ArgumentZeroException(nameof(b));
+            }
+
+            if (c == 0)
+            {
+                throw new ArgumentZeroException(nameof(c));
+            }
+
             int numericalSolution = 0;
             if (a == b)
             {
@@ -294,7 +309,43 @@ namespace ExerciseProblems
         /// <returns>The output result and having the player reach the next level.</returns>
         public static bool ReachNextLevel(int experience, int threshold, int reward)
         {
+            if (experience == 0)
+            {
+                throw new ArgumentZeroException(nameof(experience));
+            }
+
+            if (threshold == 0)
+            {
+                throw new ArgumentZeroException(nameof(threshold));
+            }
+
+            if (reward == 0)
+            {
+                throw new ArgumentZeroException(nameof(reward));
+            }
+
             return reward >= threshold - experience;
+        }
+
+        /// <summary>
+        /// This method will execute the core algorithm behind the is infinite process problem.
+        /// </summary>
+        /// <param name="a">The integer value of a.</param>
+        /// <param name="b">The integer value of b.</param>
+        /// <returns>A boolean result to see if the two numbers result in an infinite process.</returns>
+        public static bool IsInfiniteProcess(int a, int b)
+        {
+            if (a == 0)
+            {
+                throw new ArgumentZeroException(nameof(a));
+            }
+
+            if (b == 0)
+            {
+                throw new ArgumentZeroException(nameof(b));
+            }
+
+            return a > b || (b - a) % 2 != 0;
         }
     }
 }

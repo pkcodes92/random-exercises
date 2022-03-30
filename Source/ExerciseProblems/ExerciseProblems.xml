@@ -138,6 +138,11 @@
             This method will solve the problem for reaching the next level.
             </summary>
         </member>
+        <member name="M:ExerciseProblems.ProblemSolver.IsInfiniteProcess">
+            <summary>
+            This method solves the problem is infinite process.
+            </summary>
+        </member>
         <member name="T:ExerciseProblems.Program">
             <summary>
             This is the main driver class of this application.
@@ -237,6 +242,14 @@
             <param name="threshold">The threshold required to reach the next level.</param>
             <param name="reward">The number of reward points.</param>
             <returns>The output result and having the player reach the next level.</returns>
+        </member>
+        <member name="M:ExerciseProblems.Solver.IsInfiniteProcess(System.Int32,System.Int32)">
+            <summary>
+            This method will execute the core algorithm behind the is infinite process problem.
+            </summary>
+            <param name="a">The integer value of a.</param>
+            <param name="b">The integer value of b.</param>
+            <returns>A boolean result to see if the two numbers result in an infinite process.</returns>
         </member>
     </members>
 </doc>

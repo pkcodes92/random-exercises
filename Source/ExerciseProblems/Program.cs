@@ -53,6 +53,9 @@ namespace ExerciseProblems
                 case "ReachNextLevel":
                     ProblemSolver.ReachNextLevel();
                     break;
+                case "IsInfiniteProcess":
+                    ProblemSolver.IsInfiniteProcess();
+                    break;
                 default:
                     Console.WriteLine($"Sorry I don't think I have the logic for {problemChoice}");
                     break;
