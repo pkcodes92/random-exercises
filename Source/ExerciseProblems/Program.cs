@@ -47,6 +47,9 @@ namespace ExerciseProblems
                 case "KnapsackLight":
                     ProblemSolver.KnapsackLight();
                     break;
+                case "ExtraNumber": 
+                    ProblemSolver.ExtraNumber();
+                    break;
                 default:
                     Console.WriteLine($"Sorry I don't think I have the logic for {problemChoice}");
                     break;

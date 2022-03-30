@@ -144,5 +144,17 @@ namespace ExerciseProblems
             int solution = Solver.KnapsackLight(val1, weight1, val2, weight2, maxW);
             Console.WriteLine($"For the Knapsack Light problem, solution = {solution}");
         }
+
+        /// <summary>
+        /// This method will solve the extra number problem.
+        /// </summary>
+        public static void ExtraNumber()
+        {
+            int a = 2;
+            int b = 3;
+            int c = 2;
+            int solution = Solver.ExtraNumber(a, b, c);
+            Console.WriteLine($"For Extra Number, the solution = {solution}");
+        }
     }
 }

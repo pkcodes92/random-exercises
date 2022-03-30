@@ -284,5 +284,17 @@ namespace ExerciseProblems
 
             return numericalSolution;
         }
+
+        /// <summary>
+        /// This method will solve the reachNextLevel problem.
+        /// </summary>
+        /// <param name="experience">The amount of experience points.</param>
+        /// <param name="threshold">The threshold required to reach the next level.</param>
+        /// <param name="reward">The number of reward points.</param>
+        /// <returns>The output result and having the player reach the next level.</returns>
+        public static bool ReachNextLevel(int experience, int threshold, int reward)
+        {
+            return (reward >= threshold - experience);
+        }
     }
 }

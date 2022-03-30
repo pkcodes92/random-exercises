@@ -4,6 +4,24 @@
         <name>ExerciseProblems</name>
     </assembly>
     <members>
+        <member name="T:ExerciseProblems.Exceptions.ArgumentZeroException">
+            <summary>
+            This class is for the argument zero exception.
+            </summary>
+        </member>
+        <member name="M:ExerciseProblems.Exceptions.ArgumentZeroException.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ExerciseProblems.Exceptions.ArgumentZeroException"/> class.
+            </summary>
+            <param name="message">The message to render on the screen.</param>
+        </member>
+        <member name="M:ExerciseProblems.Exceptions.ArgumentZeroException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ExerciseProblems.Exceptions.ArgumentZeroException"/> class.
+            </summary>
+            <param name="serializationInfo">The serialization information.</param>
+            <param name="streamingContext">The current streaming context.</param>
+        </member>
         <member name="T:ExerciseProblems.Exceptions.ArrayInputSizeException">
             <summary>
             This class is the array input size exception.
