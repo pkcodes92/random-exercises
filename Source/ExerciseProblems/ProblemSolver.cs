@@ -156,5 +156,17 @@ namespace ExerciseProblems
             int solution = Solver.ExtraNumber(a, b, c);
             Console.WriteLine($"For Extra Number, the solution = {solution}");
         }
+
+        /// <summary>
+        /// This method will solve the problem for reaching the next level.
+        /// </summary>
+        public static void ReachNextLevel()
+        {
+            int experience = 3;
+            int reward = 5;
+            int threshold = 10;
+            bool solution = Solver.ReachNextLevel(experience, threshold, reward);
+            Console.WriteLine($"Can Reach Next Level = {solution}");
+        }
     }
 }

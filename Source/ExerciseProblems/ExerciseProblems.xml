@@ -128,6 +128,16 @@
             This method will address the solution to the knapsack ligt problem.
             </summary>
         </member>
+        <member name="M:ExerciseProblems.ProblemSolver.ExtraNumber">
+            <summary>
+            This method will solve the extra number problem.
+            </summary>
+        </member>
+        <member name="M:ExerciseProblems.ProblemSolver.ReachNextLevel">
+            <summary>
+            This method will solve the problem for reaching the next level.
+            </summary>
+        </member>
         <member name="T:ExerciseProblems.Program">
             <summary>
             This is the main driver class of this application.
@@ -218,6 +228,15 @@
             <param name="b">The second of three integers.</param>
             <param name="c">The third of three integers.</param>
             <returns>The extra number that has been selected.</returns>
+        </member>
+        <member name="M:ExerciseProblems.Solver.ReachNextLevel(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            This method will solve the reachNextLevel problem.
+            </summary>
+            <param name="experience">The amount of experience points.</param>
+            <param name="threshold">The threshold required to reach the next level.</param>
+            <param name="reward">The number of reward points.</param>
+            <returns>The output result and having the player reach the next level.</returns>
         </member>
     </members>
 </doc>

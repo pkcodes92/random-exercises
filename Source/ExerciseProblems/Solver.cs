@@ -294,7 +294,7 @@ namespace ExerciseProblems
         /// <returns>The output result and having the player reach the next level.</returns>
         public static bool ReachNextLevel(int experience, int threshold, int reward)
         {
-            return (reward >= threshold - experience);
+            return reward >= threshold - experience;
         }
     }
 }
