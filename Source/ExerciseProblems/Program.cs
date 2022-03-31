@@ -62,6 +62,9 @@ namespace ExerciseProblems
                 case "BoxBlur":
                     ProblemSolver.BoxBlur();
                     break;
+                case "BubbleSort":
+                    ProblemSolver.BubbleSort();
+                    break;
                 default:
                     Console.WriteLine($"Sorry I don't think I have the logic for {problemChoice}");
                     break;

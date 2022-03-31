@@ -153,6 +153,11 @@
             This will execute the necessary functionality to solve the Box Blur problem.
             </summary>
         </member>
+        <member name="M:ExerciseProblems.ProblemSolver.BubbleSort">
+            <summary>
+            This method will be able to show the necessary things with regards to the Bubble Sort.
+            </summary>
+        </member>
         <member name="T:ExerciseProblems.Program">
             <summary>
             This is the main driver class of this application.
@@ -275,6 +280,14 @@
             </summary>
             <param name="image">A 2D Array input.</param>
             <returns>A 2D array representing the blurred image.</returns>
+        </member>
+        <member name="M:ExerciseProblems.Solver.BubbleSort(System.Int32[],System.Int32)">
+            <summary>
+            This method will be executing the bubble sort algorithm.
+            </summary>
+            <param name="arr">The input array of integers.</param>
+            <param name="n">The size of the array, or the number of moves to sort the entire array.</param>
+            <returns>An integer value which represents the number of moves taken to sort an array.</returns>
         </member>
     </members>
 </doc>

@@ -402,11 +402,10 @@ namespace ExerciseProblems
             }
 
             int[][] result = new int[image.Length - 2][];
-            int[] ij = new int[] { -1, -1, -1, 0, 1, 1, 1, 0 };
-            int[] km = new int[] { -1, 0, 1, 1, 1, 0, -1, -1 };
+            int[] ii = new int[] { -1, -1, -1, 0, 1, 1, 1, 0 };
+            int[] jj = new int[] { -1, 0, 1, 1, 1, 0, -1, -1 };
 
             int temp;
-            
             for (int i = 1; i < image.Length - 1; i++)
             {
                 result[i - 1] = new int[image[i].Length - 2];
@@ -415,9 +414,11 @@ namespace ExerciseProblems
                     temp = 0;
                     for (int k = 0; k < 8; k++)
                     {
-                        if (0 <= i + ij[k] && ij[k] < image.Length && 0 <= j + km[k] && j + km[k] < image[i].Length)
+                        bool condition1 = 0 <= i + ii[k] && ii[k] < image.Length;
+                        bool condition2 = 0 <= j + jj[k] && j + jj[k] < image[i].Length;
+                        if (condition1 && condition2)
                         {
-                            temp += image[i + ij[k]][j + km[k]];
+                            temp += image[i + ii[k]][j + jj[k]];
                         }
 
                         result[i - 1][j - 1] = (image[i][j] + temp) / 9;
@@ -426,6 +427,55 @@ namespace ExerciseProblems
             }
 
             return result;
+        }
+
+        /// <summary>
+        /// This method will be executing the bubble sort algorithm.
+        /// </summary>
+        /// <param name="arr">The input array of integers.</param>
+        /// <param name="n">The size of the array, or the number of moves to sort the entire array.</param>
+        /// <returns>An integer value which represents the number of moves taken to sort an array.</returns>
+        public static int BubbleSort(int[] arr, int n)
+        {
+            if (arr is null)
+            {
+                throw new ArgumentNullException(nameof(arr));
+            }
+
+            if (n == 0)
+            {
+                throw new ArgumentZeroException($"Value of n = {n}");
+            }
+
+            int i, j, temp;
+            int swappedCount = 0;
+            bool swapped;
+
+            for (i = 0; i < n; ++i)
+            {
+                swapped = false;
+                for (j = 0; j < n - i - 1; ++j)
+                {
+                    if (arr[j] > arr[j + 1])
+                    {
+                        // Swap
+                        temp = arr[j];
+                        arr[j] = arr[j + 1];
+                        arr[j + 1] = temp;
+
+                        swapped = true;
+                        swappedCount++;
+                    }
+                }
+
+                // If no elements were swapped by the inner most loop, then break.
+                if (swapped == false)
+                {
+                    break;
+                }
+            }
+
+            return swappedCount;
         }
 
         private static void PrintIteration(List<int> list, int iteration)

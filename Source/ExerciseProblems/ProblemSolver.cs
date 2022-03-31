@@ -7,6 +7,7 @@ namespace ExerciseProblems
     using System;
     using System.Collections.Generic;
     using System.Globalization;
+    using System.Linq;
     using ExerciseProblems.Exceptions;
 
     /// <summary>
@@ -211,6 +212,21 @@ namespace ExerciseProblems
             {
                 Console.WriteLine(result[i]);
             }
+        }
+
+        /// <summary>
+        /// This method will be able to show the necessary things with regards to the Bubble Sort.
+        /// </summary>
+        public static void BubbleSort()
+        {
+            int n = Convert.ToInt32(Console.ReadLine());
+            string[] a_temp = Console.ReadLine().Split(' ');
+            int[] a = Array.ConvertAll(a_temp, int.Parse);
+
+            int swapCount = Solver.BubbleSort(a, n);
+            Console.WriteLine("Array has been sorted in {0} swaps", swapCount);
+            Console.WriteLine("First Element: {0}", a.First());
+            Console.WriteLine("Last Element: {0}", a.Last());
         }
     }
 }
