@@ -273,7 +273,7 @@
             <summary>
             This method will solve the Box Blur problem.
             </summary>
-            <param name="input">A 2D Array input.</param>
+            <param name="image">A 2D Array input.</param>
             <returns>A 2D array representing the blurred image.</returns>
         </member>
     </members>

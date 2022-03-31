@@ -392,11 +392,40 @@ namespace ExerciseProblems
         /// <summary>
         /// This method will solve the Box Blur problem.
         /// </summary>
-        /// <param name="input">A 2D Array input.</param>
+        /// <param name="image">A 2D Array input.</param>
         /// <returns>A 2D array representing the blurred image.</returns>
-        public static int[][] BoxBlur(int[][] input)
+        public static int[][] BoxBlur(int[][] image)
         {
-            return null;
+            if (image is null)
+            {
+                throw new ArgumentNullException(nameof(image));
+            }
+
+            int[][] result = new int[image.Length - 2][];
+            int[] ij = new int[] { -1, -1, -1, 0, 1, 1, 1, 0 };
+            int[] km = new int[] { -1, 0, 1, 1, 1, 0, -1, -1 };
+
+            int temp;
+            
+            for (int i = 1; i < image.Length - 1; i++)
+            {
+                result[i - 1] = new int[image[i].Length - 2];
+                for (int j = 0; j < image[i].Length - 1; j++)
+                {
+                    temp = 0;
+                    for (int k = 0; k < 8; k++)
+                    {
+                        if (0 <= i + ij[k] && ij[k] < image.Length && 0 <= j + km[k] && j + km[k] < image[i].Length)
+                        {
+                            temp += image[i + ij[k]][j + km[k]];
+                        }
+
+                        result[i - 1][j - 1] = (image[i][j] + temp) / 9;
+                    }
+                }
+            }
+
+            return result;
         }
 
         private static void PrintIteration(List<int> list, int iteration)
