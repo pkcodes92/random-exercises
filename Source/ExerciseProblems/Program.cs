@@ -68,6 +68,12 @@ namespace ExerciseProblems
                 case "CharIsDigit":
                     ProblemSolver.CharIsDigit();
                     break;
+                case "TinyPairs":
+                    ProblemSolver.TinyPairs();
+                    break;
+                case "ZigZag":
+                    ProblemSolver.ZigZag();
+                    break;
                 default:
                     Console.WriteLine($"Sorry I don't think I have the logic for {problemChoice}");
                     break;

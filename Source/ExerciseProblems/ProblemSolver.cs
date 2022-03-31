@@ -239,5 +239,26 @@ namespace ExerciseProblems
             bool finalResult = Solver.IsDigit(symbolToCheck);
             Console.WriteLine($"Is {symbolToCheck} a digit? {finalResult}");
         }
+
+        /// <summary>
+        /// This method will solve the zig zag problem accordingly.
+        /// </summary>
+        public static void ZigZag()
+        {
+            Console.WriteLine("Yet to be implemented!");
+        }
+
+        /// <summary>
+        /// This method will solve the tiny pairs problem.
+        /// </summary>
+        public static void TinyPairs()
+        {
+            int[] a = new int[3] { 2, 3, 5 };
+            int[] b = new int[3] { 1, 3, 4 };
+            int k = 50;
+
+            int pairsCount = Solver.TinyPairs(a, b, k);
+            Console.WriteLine($"From the arrays provided, there are: {pairsCount} Tiny Pairs");
+        }
     }
 }

@@ -479,6 +479,29 @@ namespace ExerciseProblems
         }
 
         /// <summary>
+        /// This method will be taking two arrays of equal length, and a number k and comparing to see if the constructed number is less than k.
+        /// </summary>
+        /// <param name="a">The first array of integers.</param>
+        /// <param name="b">The second array of integers.</param>
+        /// <param name="k">The number to be comparing with.</param>
+        /// <returns>The number of times that the constructed number is less than k.</returns>
+        public static int TinyPairs(int[] a, int[] b, int k)
+        {
+            int pairsCount = 0;
+            for (int i = 0; i < a.Length; i++)
+            {
+                int j = b.Length - i - 1;
+                int concatNumber = Convert.ToInt32($"{a[i]}{b[j]}");
+                if (concatNumber < k)
+                {
+                    pairsCount++;
+                }
+            }
+
+            return pairsCount;
+        }
+
+        /// <summary>
         /// This method will check if the incoming symbol is a digit or not.
         /// </summary>
         /// <param name="symbolToCheck">The character symbol to check accordingly.</param>

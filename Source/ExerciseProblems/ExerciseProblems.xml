@@ -163,6 +163,16 @@
             This method will solve the problem of finding out whether or not the character is a digit.
             </summary>
         </member>
+        <member name="M:ExerciseProblems.ProblemSolver.ZigZag">
+            <summary>
+            This method will solve the zig zag problem accordingly.
+            </summary>
+        </member>
+        <member name="M:ExerciseProblems.ProblemSolver.TinyPairs">
+            <summary>
+            This method will solve the tiny pairs problem.
+            </summary>
+        </member>
         <member name="T:ExerciseProblems.Program">
             <summary>
             This is the main driver class of this application.
@@ -293,6 +303,15 @@
             <param name="arr">The input array of integers.</param>
             <param name="n">The size of the array, or the number of moves to sort the entire array.</param>
             <returns>An integer value which represents the number of moves taken to sort an array.</returns>
+        </member>
+        <member name="M:ExerciseProblems.Solver.TinyPairs(System.Int32[],System.Int32[],System.Int32)">
+            <summary>
+            This method will be taking two arrays of equal length, and a number k and comparing to see if the constructed number is less than k.
+            </summary>
+            <param name="a">The first array of integers.</param>
+            <param name="b">The second array of integers.</param>
+            <param name="k">The number to be comparing with.</param>
+            <returns>The number of times that the constructed number is less than k.</returns>
         </member>
         <member name="M:ExerciseProblems.Solver.IsDigit(System.Char)">
             <summary>
