@@ -59,6 +59,9 @@ namespace ExerciseProblems
                 case "BogoSort":
                     ProblemSolver.BogoSort();
                     break;
+                case "BoxBlur":
+                    ProblemSolver.BoxBlur();
+                    break;
                 default:
                     Console.WriteLine($"Sorry I don't think I have the logic for {problemChoice}");
                     break;

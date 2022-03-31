@@ -189,5 +189,28 @@ namespace ExerciseProblems
             List<int> inputList = new List<int>() { 2, 1, 3, 0, 5 };
             Solver.BogoSort(inputList, true, 5);
         }
+
+        /// <summary>
+        /// This will execute the necessary functionality to solve the Box Blur problem.
+        /// </summary>
+        public static void BoxBlur()
+        {
+            int[][] imageInput = new int[3][]
+            {
+                new int[] { 1, 1, 1 },
+                new int[] { 1, 7, 1 },
+                new int[] { 1, 1, 1 },
+            };
+
+            int[][] result = Solver.BoxBlur(imageInput);
+
+            Console.WriteLine("Box blurring result is below" + Environment.NewLine + "--------------------------");
+
+            // Rendering the necessary output to the console.
+            for (int i = 0; i < result.GetLength(0); i++)
+            {
+                Console.WriteLine(result[i]);
+            }
+        }
     }
 }

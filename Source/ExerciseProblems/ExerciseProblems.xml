@@ -148,6 +148,11 @@
             This will execute the various things with regards to the Bogo Sort.
             </summary>
         </member>
+        <member name="M:ExerciseProblems.ProblemSolver.BoxBlur">
+            <summary>
+            This will execute the necessary functionality to solve the Box Blur problem.
+            </summary>
+        </member>
         <member name="T:ExerciseProblems.Program">
             <summary>
             This is the main driver class of this application.
@@ -263,6 +268,13 @@
             <param name="inputList">The input list of integers.</param>
             <param name="announce">A boolean value determining whether or not to display output in the console.</param>
             <param name="delay">The time delay between each output to the console.</param>
+        </member>
+        <member name="M:ExerciseProblems.Solver.BoxBlur(System.Int32[][])">
+            <summary>
+            This method will solve the Box Blur problem.
+            </summary>
+            <param name="input">A 2D Array input.</param>
+            <returns>A 2D array representing the blurred image.</returns>
         </member>
     </members>
 </doc>
