@@ -228,5 +228,16 @@ namespace ExerciseProblems
             Console.WriteLine("First Element: {0}", a.First());
             Console.WriteLine("Last Element: {0}", a.Last());
         }
+
+        /// <summary>
+        /// This method will solve the problem of finding out whether or not the character is a digit.
+        /// </summary>
+        public static void CharIsDigit()
+        {
+            Console.WriteLine("Enter a character to find out if it is a number: ");
+            char symbolToCheck = Convert.ToChar(Console.ReadLine());
+            bool finalResult = Solver.IsDigit(symbolToCheck);
+            Console.WriteLine($"Is {symbolToCheck} a digit? {finalResult}");
+        }
     }
 }

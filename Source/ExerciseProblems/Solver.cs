@@ -478,6 +478,26 @@ namespace ExerciseProblems
             return swappedCount;
         }
 
+        /// <summary>
+        /// This method will check if the incoming symbol is a digit or not.
+        /// </summary>
+        /// <param name="symbolToCheck">The character symbol to check accordingly.</param>
+        /// <returns>A boolean value determining if the symbol or character is a digit or not.</returns>
+        public static bool IsDigit(char symbolToCheck)
+        {
+            bool valid = true;
+            if (char.IsNumber(symbolToCheck))
+            {
+                valid = true;
+            }
+            else
+            {
+                valid = false;
+            }
+
+            return valid;
+        }
+
         private static void PrintIteration(List<int> list, int iteration)
         {
             Console.Write("Bogo Sort iteration {0}: ", iteration);
