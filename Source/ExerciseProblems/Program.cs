@@ -71,6 +71,9 @@ namespace ExerciseProblems
                 case "TinyPairs":
                     ProblemSolver.TinyPairs();
                     break;
+                case "RatingSystem":
+                    ProblemSolver.RatingSystem();
+                    break;
                 default:
                     Console.WriteLine($"Sorry I don't think I have the logic for {problemChoice}");
                     break;

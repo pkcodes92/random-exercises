@@ -252,5 +252,13 @@ namespace ExerciseProblems
             int pairsCount = Solver.TinyPairs(a, b, k);
             Console.WriteLine($"From the arrays provided, there are: {pairsCount} Tiny Pairs");
         }
+
+        /// <summary>
+        /// This method will solve the Capital One interview problem.
+        /// </summary>
+        public static void RatingSystem()
+        {
+            Console.WriteLine("Yet to be implemented!");
+        }
     }
 }

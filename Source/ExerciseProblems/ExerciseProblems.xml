@@ -168,6 +168,11 @@
             This method will solve the tiny pairs problem.
             </summary>
         </member>
+        <member name="M:ExerciseProblems.ProblemSolver.RatingSystem">
+            <summary>
+            This method will solve the Capital One interview problem.
+            </summary>
+        </member>
         <member name="T:ExerciseProblems.Program">
             <summary>
             This is the main driver class of this application.
