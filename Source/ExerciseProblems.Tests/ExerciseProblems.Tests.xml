@@ -85,6 +85,11 @@
             This test method will ensure that there is an exception thrown.
             </summary>
         </member>
+        <member name="T:ExerciseProblems.Tests.NumbersWithEvenDigitsTest">
+            <summary>
+            This will unit test the solution to the problem to find numbers that have an even number of digits.
+            </summary>
+        </member>
         <member name="T:ExerciseProblems.Tests.NumbersWithEvenNumberLengthTest">
             <summary>
             This class tests the logic for the problem to find the number of integers which are of even-length in an array.

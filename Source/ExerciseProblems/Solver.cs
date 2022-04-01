@@ -414,8 +414,8 @@ namespace ExerciseProblems
                     temp = 0;
                     for (int k = 0; k < 8; k++)
                     {
-                        bool condition1 = 0 <= i + ii[k] && ii[k] < image.Length;
-                        bool condition2 = 0 <= j + jj[k] && j + jj[k] < image[i].Length;
+                        bool condition1 = i + ii[k] >= 0 && ii[k] < image.Length;
+                        bool condition2 = j + jj[k] >= 0 && j + jj[k] < image[i].Length;
                         if (condition1 && condition2)
                         {
                             temp += image[i + ii[k]][j + jj[k]];
