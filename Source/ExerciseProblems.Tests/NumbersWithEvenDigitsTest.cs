@@ -26,5 +26,15 @@ namespace ExerciseProblems.Tests
             Console.WriteLine($"Number of results: {calculatedResult}");
             Assert.AreEqual(expectedResult, calculatedResult);
         }
+
+        /// <summary>
+        /// This method will test the functionality in <see cref="Solver.FindNumbersWithEvenNumberDigits(int[])"/> and throw an exception accordingly.
+        /// </summary>
+        [TestMethod]
+        public void FindNumbersWithEvenDigits_ExceptionThrow_Test()
+        {
+            int[] inputTestForExceptionThrow = null;
+            Assert.ThrowsException<ArgumentNullException>(() => Solver.FindNumbersWithEvenNumberDigits(inputTestForExceptionThrow));
+        }
     }
 }

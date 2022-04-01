@@ -95,6 +95,11 @@
             This method will test the functionality in <see cref="M:ExerciseProblems.Solver.FindNumbersWithEvenNumberDigits(System.Int32[])"/>.
             </summary>
         </member>
+        <member name="M:ExerciseProblems.Tests.NumbersWithEvenDigitsTest.FindNumbersWithEvenDigits_ExceptionThrow_Test">
+            <summary>
+            This method will test the functionality in <see cref="M:ExerciseProblems.Solver.FindNumbersWithEvenNumberDigits(System.Int32[])"/> and throw an exception accordingly.
+            </summary>
+        </member>
         <member name="T:ExerciseProblems.Tests.NumbersWithEvenNumberLengthTest">
             <summary>
             This class tests the logic for the problem to find the number of integers which are of even-length in an array.

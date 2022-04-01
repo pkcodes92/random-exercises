@@ -67,6 +67,11 @@ namespace ExerciseProblems
         /// <returns>A total count of even-numbered integers.</returns>
         public static int FindNumbersWithEvenNumberDigits(int[] input)
         {
+            if (input is null)
+            {
+                throw new ArgumentNullException(nameof(input));
+            }
+
             var totalCount = 0;
             for (int i = 0; i < input.Length; i++)
             {
