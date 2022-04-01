@@ -14,5 +14,17 @@ namespace ExerciseProblems.Tests
     [TestClass]
     public class NumbersWithEvenDigitsTest
     {
+        /// <summary>
+        /// This method will test the functionality in <see cref="Solver.FindNumbersWithEvenNumberDigits(int[])"/>.
+        /// </summary>
+        [TestMethod]
+        public void FindNumbersWithEvenNumberDigits_NormalCase_Test()
+        {
+            int[] inputTest = new int[] { 23, 3, 101, 2983 };
+            int expectedResult = 2;
+            int calculatedResult = Solver.FindNumbersWithEvenNumberDigits(inputTest);
+            Console.WriteLine($"Number of results: {calculatedResult}");
+            Assert.AreEqual(expectedResult, calculatedResult);
+        }
     }
 }

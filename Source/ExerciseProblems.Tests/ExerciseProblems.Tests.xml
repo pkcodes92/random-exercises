@@ -90,6 +90,11 @@
             This will unit test the solution to the problem to find numbers that have an even number of digits.
             </summary>
         </member>
+        <member name="M:ExerciseProblems.Tests.NumbersWithEvenDigitsTest.FindNumbersWithEvenNumberDigits_NormalCase_Test">
+            <summary>
+            This method will test the functionality in <see cref="M:ExerciseProblems.Solver.FindNumbersWithEvenNumberDigits(System.Int32[])"/>.
+            </summary>
+        </member>
         <member name="T:ExerciseProblems.Tests.NumbersWithEvenNumberLengthTest">
             <summary>
             This class tests the logic for the problem to find the number of integers which are of even-length in an array.
