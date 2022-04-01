@@ -241,14 +241,6 @@ namespace ExerciseProblems
         }
 
         /// <summary>
-        /// This method will solve the zig zag problem accordingly.
-        /// </summary>
-        public static void ZigZag()
-        {
-            Console.WriteLine("Yet to be implemented!");
-        }
-
-        /// <summary>
         /// This method will solve the tiny pairs problem.
         /// </summary>
         public static void TinyPairs()

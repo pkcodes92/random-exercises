@@ -163,11 +163,6 @@
             This method will solve the problem of finding out whether or not the character is a digit.
             </summary>
         </member>
-        <member name="M:ExerciseProblems.ProblemSolver.ZigZag">
-            <summary>
-            This method will solve the zig zag problem accordingly.
-            </summary>
-        </member>
         <member name="M:ExerciseProblems.ProblemSolver.TinyPairs">
             <summary>
             This method will solve the tiny pairs problem.
